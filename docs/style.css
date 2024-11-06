@@ -97,6 +97,14 @@ body {
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.main__popular__item:nth-child(even) {
+    background-color: red;
+}
+
+.main__popular__item:nth-child(odd) {
+    background-color: green;
+}
+
 .main__popular__item:hover {
     color: #fff;
     transform: scale(1.05);
@@ -133,7 +141,7 @@ body {
 
 @media screen and (max-width: 1400px) {
     .nav__list {
-        padding-left: 10px;
+        padding-left: 2px;
     }
 
     .main__popular__item__image {
@@ -156,7 +164,7 @@ body {
     }
 
     .header__title {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .nav__item {
