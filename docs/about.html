@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="itmo gamer, магазин компьютерных игр, игры для винды, купить игру онлайн">
+    <meta name="description" content="О нас - Интернет-магазин компьютерных игр ITMOGamer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js"></script>
+    <script src="js/fetchAPI.js"></script>
+    <title>О нас - ITMOGamer</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">ITMOGamer</h1>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="catalog.html">Все игры</a></li>
+                <li class="nav__item"><a class="nav__link" href="about.html">О нас</a></li>
+                <li class="nav__item"><a class="nav__link" href="feedback.html">Обратная связь</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="main__about">
+            <h2 class="main__about__title">О нас</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat magna sollicitudin enim posuere, ac iaculis enim efficitur. Vestibulum sed metus sit amet enim congue suscipit. Etiam condimentum dui ac dui egestas, sed pellentesque nibh lacinia. Donec molestie in odio sit amet accumsan. Proin eleifend egestas nunc at vulputate. Aenean iaculis, diam non fringilla interdum, risus libero posuere nunc, at sollicitudin dolor orci sit amet lacus. Nunc ac sapien ullamcorper, pretium mi quis, faucibus ligula. Aenean in risus nec eros ornare egestas sed eget nisl. Nullam metus diam, accumsan at lacinia sit amet, faucibus in magna. Nulla feugiat orci velit, cursus dignissim eros posuere nec. Suspendisse tincidunt elementum augue, ac tristique nulla fringilla quis.</p>
+            <p>Maecenas ultricies sed purus quis faucibus. Nam volutpat augue vel ex vulputate pretium. Cras eget sem et dui aliquet volutpat sit amet a erat. Praesent suscipit, lorem ut accumsan hendrerit, felis felis fermentum eros, quis dictum ex nunc non lacus. In luctus leo vel tristique vulputate. Donec euismod sem ut leo vestibulum, vel bibendum nunc venenatis. Quisque ligula urna, mattis ut feugiat a, fermentum id diam. Quisque eget iaculis quam. Praesent pretium sit amet metus non malesuada. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent tincidunt aliquam pretium. Nam non facilisis mi. Fusce id eleifend lorem, et placerat nulla. Integer laoreet nibh est, sit amet interdum dolor condimentum eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ac nunc ex.</p>
+            <p>Nullam tincidunt justo eu blandit vehicula. Sed non dictum magna. Mauris velit metus, consequat et nulla ac, tincidunt pretium enim. Nam blandit elit vel justo aliquam, quis elementum tellus dapibus. Fusce dictum ex in nisi pharetra, eu consectetur leo malesuada. Sed aliquam justo metus, sed rhoncus est cursus quis. In hac habitasse platea dictumst. Duis condimentum nec odio non elementum. Aliquam mattis enim a nisi vulputate, sit amet mattis felis laoreet. Phasellus non aliquam mauris. Aliquam felis est, finibus lacinia dui ac, commodo efficitur lectus. In non posuere lacus. Donec pulvinar lacus vel viverra facilisis. Duis volutpat dignissim nisl ac viverra. Fusce hendrerit, sapien id tempus sagittis, odio risus luctus neque, non venenatis nibh leo vel mi. Maecenas in tortor interdum, tincidunt mi at, finibus libero.</p>
+            <p>Nam congue mollis sapien sed venenatis. Aenean tempus sit amet neque in hendrerit. Proin dictum sed nibh quis aliquet. Vestibulum ornare rhoncus tellus eu vulputate. Aenean diam libero, feugiat dignissim libero venenatis, bibendum laoreet purus. Nulla aliquam risus non condimentum eleifend. Quisque ipsum purus, iaculis non fermentum quis, facilisis vel lorem. Nam nec maximus eros.</p>
+            <p>Curabitur fermentum rutrum nunc ut consectetur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris id malesuada magna. Aliquam pretium neque eget sem aliquam, nec condimentum sem blandit. Integer scelerisque magna vel ligula auctor ornare. Praesent sed iaculis ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris facilisis arcu tellus, nec lobortis lacus euismod a. Curabitur odio velit, elementum a sollicitudin ut, semper sed nunc. Mauris volutpat aliquet orci. Nulla molestie turpis non metus consequat dictum. Suspendisse varius diam nec tempus aliquet. Pellentesque id tincidunt metus. Morbi ultricies rhoncus mi ut euismod.</p>
+        </section>
+        <section class="main__reviews">
+            <h2 class="main__reviews__title">Отзывы о нас</h2>
+            <div id="preloader" class="preloader">
+                <img src="images/loading-loading-forever.gif" alt="preloader">
+            </div>
+            <div id="reviews-container"></div>
+            <div id="error-message" class="error-message" style="display: none;">⚠ Что-то пошло не так</div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__contacts">
+            <pre>
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⡤⠤⠤⠤⢤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠤⠖⠊⠉⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠒⠦⢄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠖⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⠦⣀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⢦⡀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⣉⡤⠖⠊⡏⢉⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢫⠉⢱⠦⣄⡀⠙⢦⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢠⠏⡞⠁⠀⣠⢞⡵⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠳⡜⣇⠀⠙⢆⠈⢧⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢠⠋⠀⢧⡠⣾⡵⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢞⣧⠀⢸⠂⠀⣧⠀
+⠀⠀⠀⠀⠀⠀⠀⡟⠀⠀⠀⠙⠉⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡇⠀⠀⠀⠀⠀⠀⠈⠛⠒⠋⠀⠀⢸⠀
+⠀⠀⠀⠀⠀⠀⢸⠁⠀⠀⠀⠀⢠⠄⠀⠀⠀⠀⢠⢷⠀⠀⠀⠀⠀⠀⠀⠀⡄⠀⣸⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢨⠀
+⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⡆⠀⠀⢀⠀⠀⢸⠈⢇⠀⢰⠀⠀⠀⠀⠀⡇⢠⠃⢻⠀⢀⡔⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀
+⠀⠀⠀⠀⠀⠀⠈⡆⠀⠀⠀⠀⡇⠀⠀⠈⡵⠦⡼⠶⢾⣷⣸⣧⠀⠀⠀⣸⣧⣯⡶⣾⡴⡏⢀⣄⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢧⠀⠀⠀⠀⡇⠀⠀⡼⠁⠀⣀⣀⡀⠀⠉⠉⢦⠀⢠⠋⠉⠁⠀⣉⣸⣗⣉⡈⠳⣄⠀⠀⠀⠀⠀⡇⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠘⣴⡀⠀⠀⢃⣠⠞⣿⡷⡿⠛⣿⣿⣿⢶⡄⠈⠳⠋⠀⠀⣰⢾⠛⢻⣿⣿⡿⣿⡈⡟⠂⠀⡇⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣧⠀⠀⠈⠁⠀⠸⡇⢿⣽⣿⣿⣿⡇⠁⠀⠀⠀⠀⠀⠀⢿⡵⣿⣿⣯⡇⠏⡹⠁⠀⠀⢀⡇⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡆⠀⠀⠀⠀⠀⠹⣌⠻⠿⠿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⠿⠿⠛⠀⣰⠃⠀⠀⠀⣠⠃⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢆⢀⡀⠀⠀⠀⠈⠳⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⡃⠀⠀⢀⡜⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠑⢆⡀⠀⠈⠻⡍⠀⠀⠀⠀⠀⠒⠒⠂⠀⠀⠀⠀⠀⣀⣤⣟⠁⣠⠔⠃⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠢⣄⣿⠛⣻⣶⣤⣤⣤⣀⣠⣤⢤⣤⣴⡶⠫⠿⣿⡚⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⢻⣶⡄⢰⢳⠃⢀⣷⣿⠦⢯⣿⡗⠀⢧⠹⡄⠀⣤⣽⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣷⣶⣶⣿⣄⣾⠏⠀⠈⠑⢦⡀⣤⠞⠉⠀⠈⠱⣧⢠⣼⣿⣦⣽⣦⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠔⣻⣿⣿⣿⡿⠟⢹⣿⡄⠀⠀⠀⣾⣿⣿⡀⠀⠀⠀⣸⣿⣿⢿⣿⣿⣿⣿⣿⢦⡀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣰⣯⡟⠓⢍⠻⡿⠏⠁⠀⢸⢿⡟⠲⠶⠚⢱⠋⢲⠑⠒⠒⠊⣟⡩⢾⡇⠙⢿⣿⡿⢋⡼⡄⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⡼⠁⠀⠙⢤⡀⡻⠁⠀⠀⠀⡌⠶⣷⡶⠶⢦⠘⣗⠏⢀⠒⢒⣒⡻⠆⢸⡇⠀⠀⢻⡕⠉⠀⠀⠳⡀⠀⠀
+⠀⠀⠀⠀⠀⠀⢰⡀⠀⠀⠀⣰⠋⠁⠀⠀⠀⠀⣧⠀⠀⠉⠉⠉⠀⢸⠀⠈⠉⠉⠀⠀⠀⣠⡇⠀⠀⠀⠀⠙⢦⣀⣀⡴⠃⠀
+⠀⠀⠀⠀⠀⠀⠀⠑⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⡏⠳⣄⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⡠⠚⠁⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣇⡀⠈⠑⠢⣄⡀⠈⠁⠀⣀⠴⠋⠀⣀⣠⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣯⣽⠀⠀⠀⠀⠉⣷⠒⡋⠀⠀⠀⠀⢫⣵⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⢰⠤⡄⠀⠀⠀⡇⠀⣇⠀⠀⠀⡤⢦⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠧⠞⠀⠹⣄⠀⢸⠀⠀⢹⣀⣠⠞⠀⠘⠦⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⣀⣀⣉⡟⠀⠀⠀⡏⠀⠀⠀⣀⡀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠎⠉⠉⠉⠀⠈⡇⠀⠀⠀⡏⠉⠉⠉⠁⠉⢇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢨⡄⠀⠀⠀⣆⣠⠇⠀⠀⠀⣧⠀⣠⠀⠀⠀⢸⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠳⠤⠤⠶⠛⠁⠀⠀⠀⠀⠈⠻⠿⣦⣤⡤⠞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            </pre>
+            <h3>Контакты</h3>
+            <p>Почта: <b>itmogamer@yandex.ru</b></p>
+            <p>© 2024 ITMOGamer. Все права защищены</p>
+        </section>
+    </footer>
+</body>
+</html>
